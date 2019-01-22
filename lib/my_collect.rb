@@ -4,12 +4,14 @@ def my_collect(array)
 
   while i < array.length
     new_array.push(yield[i])
-    i += 1 
+    i += 1
+  end
+  new_array 
 =begin
   array.each do |str|
     str.split(" ").first
     new_array << str.upcase
   end
   array
-=end  
+=end
 end
