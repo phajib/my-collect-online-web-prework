@@ -6,7 +6,7 @@ def my_collect(array)
     new_array.push(yield[i])
     i += 1
   end
-  new_array 
+  new_array
 =begin
   array.each do |str|
     str.split(" ").first
@@ -14,4 +14,8 @@ def my_collect(array)
   end
   array
 =end
+end
+
+my_collect(students) do |name|
+  name.split(" ").first
 end
