@@ -5,6 +5,7 @@ def my_collect(array)
   while i < array.length
     new_array.push(yield[i]) do |str|
       str.split(" ").first
+    end
     i += 1
   end
   new_array
