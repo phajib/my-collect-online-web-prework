@@ -16,6 +16,7 @@ def my_collect(array)
 =end
 end
 
+=begin
 my_collect(array) do |name|
   name.split(" ").first
 end
@@ -23,3 +24,4 @@ end
 my_collect(languages) do |lang|
   lang.upcase
 end
+=end
