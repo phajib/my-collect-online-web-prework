@@ -3,10 +3,11 @@ def my_collect(array)
   i = 0
 
   while i < array.length
-    new_array.push(yield[i]) do |str|
-      str.split(" ").first
-    end
+    yield (array[i])
     i += 1
+    #new_array.push(yield[i]) do |str|
+    #  str.split(" ").first
+    #end
   end
   array
   #new_array
