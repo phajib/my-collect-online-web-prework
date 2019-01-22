@@ -9,7 +9,7 @@ def my_collect(array)
     #  str.split(" ").first
     #end
   end
-  new_array
+  array
   #new_array
 =begin
   array.each do |str|
