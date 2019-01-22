@@ -8,6 +8,7 @@ def my_collect(array)
     end
     i += 1
   end
+  array
   #new_array
 =begin
   array.each do |str|
