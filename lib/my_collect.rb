@@ -3,7 +3,8 @@ def my_collect(array)
   i = 0
 
   while i < array.length
-    new_array.push(yield[i])
+    new_array.push(yield[i]) do |str|
+      str.split(" ").first
     i += 1
   end
   new_array
