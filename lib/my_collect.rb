@@ -8,7 +8,7 @@ def my_collect(array)
     end
     i += 1
   end
-  new_array
+  #new_array
 =begin
   array.each do |str|
     str.split(" ").first
