@@ -7,6 +7,14 @@ def my_collect(array)
     i += 1
   end
   new_array
+
+  my_collect(array) do |name|
+    name.split(" ").first
+  end
+
+  my_collect(languages) do |lang|
+    lang.upcase
+  end
 =begin
   array.each do |str|
     str.split(" ").first
@@ -14,12 +22,4 @@ def my_collect(array)
   end
   array
 =end
-end
-
-my_collect(array) do |name|
-  name.split(" ").first
-end
-
-my_collect(languages) do |lang|
-  lang.upcase
 end
